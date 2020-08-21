@@ -1,0 +1,289 @@
+<div class="container">
+    <form [formGroup]="fitnessForm" (ngSubmit)="onSubmit()" >
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstname">First Name</label>
+              <input type="text" class="form-control"  
+              formControlName="firstname"
+              placeholder="First name"
+               >
+              <div class="alert alert-danger mt-1"
+               *ngIf="!fitnessForm.controls['firstname'].valid && fitnessForm.controls['firstname'].touched">
+                <div *ngIf="fitnessForm.controls['firstname'].errors.required">
+                    Firstname is required
+                </div> 
+                <div *ngIf="fitnessForm.controls['firstname'].errors.pattern">
+                    Please enter only alphabets
+                </div>    
+             </div>
+                        
+            </div>
+             <div class="form-group col-md-6"> 
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" 
+              formControlName="lastname" 
+              placeholder="Last name"
+                   >
+                   <div class="alert alert-danger mt-1"
+                   *ngIf="!fitnessForm.controls['lastname'].valid && fitnessForm.controls['lastname'].touched">
+                    <div *ngIf="fitnessForm.controls['lastname'].errors.required">
+                        Lastname is required
+                    </div> 
+                    <div *ngIf="fitnessForm.controls['lastname'].errors.pattern">
+                        Please enter only alphabets
+                    </div>    
+                 </div>
+
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" 
+              formControlName="email" 
+              placeholder="Email">
+
+              <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['email'].valid && fitnessForm.controls['email'].touched">
+               <div *ngIf="fitnessForm.controls['email'].errors.required">
+                   Email is required
+               </div> 
+               <div *ngIf="fitnessForm.controls['email'].errors.email">
+                   Please enter valid email
+               </div>    
+            </div>
+
+            </div>
+            <div class="form-group col-md-6">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" 
+              formControlName="age"
+              placeholder="Age">
+
+              <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['age'].valid && fitnessForm.controls['age'].touched">
+               <div *ngIf="fitnessForm.controls['age'].errors.required">
+                   Age is required
+               </div> 
+               <div *ngIf="fitnessForm.controls['age'].errors.pattern ||
+               fitnessForm.controls['age'].errors.min ||
+               fitnessForm.controls['age'].errors.max">
+                   Age should be between 18 to 60
+               </div>    
+            </div>
+
+            </div>
+          </div>
+          <fieldset class="border p-3 mb-3">
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control"
+             formControlName="address" 
+             placeholder="1234 Main St">
+
+             <div class="alert alert-danger mt-1"
+             *ngIf="!fitnessForm.controls['address'].valid && fitnessForm.controls['address'].touched">
+              <div *ngIf="fitnessForm.controls['address'].errors.required">
+                  Address required
+              </div> 
+                  
+           </div>
+
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Phone Number</label>
+            <input type="text" class="form-control" 
+            formControlName="phone" 
+            placeholder="Phone number">
+
+            <div class="alert alert-danger mt-1"
+                   *ngIf="!fitnessForm.controls['phone'].valid && fitnessForm.controls['phone'].touched">
+                    <div *ngIf="fitnessForm.controls['phone'].errors.required">
+                        Phone number is required
+                    </div> 
+                    <div *ngIf="fitnessForm.controls['phone'].errors.pattern ||
+                    fitnessForm.controls['phone'].errors.minlength ||
+                    fitnessForm.controls['phone'].errors.maxlength">
+                        Please enter a valid phone number
+                    </div>    
+                 </div>
+
+          </div>
+        </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control"
+               formControlName="city">
+
+               <div class="alert alert-danger mt-1"
+               *ngIf="!fitnessForm.controls['city'].valid && fitnessForm.controls['city'].touched">
+                <div *ngIf="fitnessForm.controls['city'].errors.required">
+                    City is required
+                </div> 
+                <div *ngIf="fitnessForm.controls['city'].errors.pattern">
+                    Please enter a valid City name
+                </div>    
+             </div>
+
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <input type="text" formControlName="state" class="form-control">
+             
+              <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['state'].valid && fitnessForm.controls['state'].touched">
+               <div *ngIf="fitnessForm.controls['state'].errors.required">
+                   State is required
+               </div> 
+               <div *ngIf="fitnessForm.controls['state'].errors.pattern">
+                   Please enter a valid State name
+               </div>    
+            </div>
+
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Pincode</label>
+              <input type="text" class="form-control"
+               formControlName="pincode" 
+              >
+
+              <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['pincode'].valid && fitnessForm.controls['pincode'].touched">
+               <div *ngIf="fitnessForm.controls['pincode'].errors.required">
+                   Pincode is required
+               </div> 
+               <div *ngIf="fitnessForm.controls['pincode'].errors.maxlength || 
+               fitnessForm.controls['pincode'].errors.minlength ||
+               fitnessForm.controls['pincode'].errors.pattern
+               ">
+                   Please enter a valid 6 digit pincode
+               </div>    
+            </div>
+
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Country">Country</label>
+                <input type="text" class="form-control"
+                 formControlName="country">
+                 <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['country'].valid && fitnessForm.controls['country'].touched">
+                   Country is required 
+                 </div>
+                 </div>
+          </div>
+        </fieldset>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Trainer preference</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" 
+                  formControlName="preference"  value="male trainer" >
+                  <label class="form-check-label" for="male trainer">
+                    Male Trainer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio"
+                  formControlName="preference"  value="femaile trainer">
+                  <label class="form-check-label" for="female trainer">
+                    Female Trainer
+                  </label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio"
+                   formControlName="preference"  value="any" >
+                  <label class="form-check-label" for="Any">
+                    Any
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Package</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" 
+                  value="500" 
+                  formControlName="package"
+                  (change)="check()">
+                  <label class="form-check-label" for="gridRadios1">
+                    500
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio"
+                  formControlName="package" 
+                   value="1500"
+                   (change)="check()">
+                  <label class="form-check-label" for="gridRadios2">
+                    1500
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" 
+                  formControlName="package" 
+                   value="2000" 
+                   (change)="check()">
+                  <label class="form-check-label" for="gridRadios3">
+                    2000
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" 
+                    formControlName="package" 
+                     value="2500"
+                     (change)="check()" >
+                    <label class="form-check-label" for="gridRadios3">
+                      2500
+                    </label>
+                  </div>
+                  <div class="form-check">
+                      <div class="form-row">
+                      <div class="form-group col-md-4">
+                    <input class="form-check-input" type="radio" 
+                    formControlName="package" 
+                     value="other" (change)="check()">
+                    <label class="form-check-label" for="gridRadios3">
+                      Other
+                    </label>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inr">Inr</label>
+                    <input type="text" class="form-control"
+                     formControlName="inr" 
+                    >
+                    <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['inr'].valid && fitnessForm.controls['inr'].touched">
+                   inr is required 
+                 </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="paisa">Paisa</label>
+                    <input type="text" class="form-control"
+                     formControlName="paisa" 
+                    >
+                    <div class="alert alert-danger mt-1"
+              *ngIf="!fitnessForm.controls['paisa'].valid && fitnessForm.controls['paisa'].touched">
+                   paisa is required 
+                 </div>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <input type="submit" class="btn btn-primary btn-block my-3" 
+          value="Place Appointment" [disabled]="fitnessForm.invalid">
+      </form>
+</div>

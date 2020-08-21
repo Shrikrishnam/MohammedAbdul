@@ -1,0 +1,233 @@
+{
+  "allfriends": [
+    {
+      "firstname": "javed",
+      "lastname": "ben",
+      "email": "benjav@gmail.com",
+      "phone": "7894561230",
+      "age": 22,
+      "address": "main",
+      "state": "maha",
+      "pincode": "123456",
+      "city": "mumbai",
+      "country": "india",
+      "package": "1500",
+      "preference": "any",
+      "id": 1
+    },
+    {
+      "firstname": "pump",
+      "lastname": "testone",
+      "email": "test12@gmail.com",
+      "phone": "7894561230",
+      "age": 25,
+      "address": "main",
+      "state": "maha",
+      "pincode": "123456",
+      "city": "mumbai",
+      "country": "india",
+      "package": "2500",
+      "preference": "any",
+      "id": 3
+    },
+    {
+      "firstname": "main",
+      "lastname": "tom",
+      "email": "tom@gmail.com",
+      "phone": "1234567890",
+      "age": 43,
+      "address": "sf",
+      "state": "ads",
+      "pincode": "123456",
+      "city": "dfef",
+      "country": "india",
+      "package": "500",
+      "preference": "male trainer",
+      "id": 4
+    },
+    {
+      "firstname": "jerry",
+      "lastname": "mouse",
+      "email": "jerry@gmail.com",
+      "phone": "1234567890",
+      "age": 43,
+      "address": "sf",
+      "state": "ads",
+      "pincode": "123456",
+      "city": "dfef",
+      "country": "india",
+      "package": "2500",
+      "preference": "femaile trainer",
+      "id": 5
+    },
+    {
+      "firstname": "random",
+      "lastname": "man",
+      "email": "random@gmail.com",
+      "phone": "1234567890",
+      "age": 43,
+      "address": "sf",
+      "state": "ads",
+      "pincode": "123456",
+      "city": "dfef",
+      "country": "india",
+      "package": "500",
+      "preference": "femaile trainer",
+      "id": 6
+    }
+  ],
+  "contactus": [
+    {
+      "firstname": "javed",
+      "lastname": "ben",
+      "phonenumber": 2,
+      "email": "ben@gmail.com",
+      "message": "hello",
+      "id": 2
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 3
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 4
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 5
+    },
+    {
+      "firstname": "pumpkin",
+      "lastname": "sen",
+      "phonenumber": 1234567890,
+      "email": "pumpkin@gmail.com",
+      "message": "please call",
+      "id": 6
+    },
+    {
+      "firstname": "final",
+      "lastname": "test ",
+      "phonenumber": 7894567892,
+      "email": "final@gmail.com",
+      "message": "final test",
+      "id": 7
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 8
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 9
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 10
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 11
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 12
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 13
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 14
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 15
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 16
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 17
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 18
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 19
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 20
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+
+ <div class="container-fluid">
+ <div class="table-responsive">
+ <table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="h1">Sl NO</th>
+            <th scope="col" class="h2">Name</th>
+            <th scope="col" class="h3">Address</th>
+            <th scope="col" class="h4">City</th>
+            <th scope="col" class="h5">Package</th>
+            <th scope="col" class="h6">Trainer Preference</th>
+            <th scope="col" class="h7">Phone</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
+            <!-- <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">Price</th>           
+            <th scope="col">State</th>           
+            <th scope="col">Country</th>
+            <th scope="col">Pincode</th> -->
+          </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ap of data">
+        <th scope="row">{{ap.id}}</th>
+        <td>{{ap.firstname+' '+ap.lastname}}</td>
+        <td>{{ap.address}}</td>
+        <td>{{ap.city}}</td>
+        <td>{{ap.package}}</td>
+        <td>{{ap.preference}}</td>
+        <td>{{ap.phone}}</td>
+        <td><a (click)="delete(ap.id)" class="btn btn-primary text-white">Delete</a></td>
+        <td><a (click)="edit(ap)" class="btn btn-primary text-white">Edit</a></td>
+        <!-- <td>{{ap.email}}</td>
+        <td>{{ap.age}}</td>
+       <td >{{check(ap.inr,ap.paisa)}}</td>
+       <td>{{ap.state}}</td>
+       <td>{{ap.country}}</td>
+      <td>{{ap.pincode}}</td> -->
+      </tr>
+      
+    </tbody>
+  </table>
+  
+</div>
+</div>

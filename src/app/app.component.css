@@ -1,0 +1,7 @@
+a{
+    background-color: lightgray;
+}
+
+a.active{
+    background-color: red;
+}
